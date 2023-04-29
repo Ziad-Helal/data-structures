@@ -26,7 +26,7 @@ const dataStructures = [
                         disabled: true,
                     },
                 ],
-                disabled: false,
+                disabled: true,
             },
             {
                 name: "clear",
