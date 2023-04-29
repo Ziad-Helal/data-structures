@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --palette-color-1: #ffffff;
+        --palette-color-2: #cccccc;
+        --palette-color-3: #999999;
+        --palette-color-4: #666666;
+        --palette-color-5: #333333;
+        --palette-color-6: #000000;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --palette-color-1: #000000;
+        --palette-color-2: #333333;
+        --palette-color-3: #666666;
+        --palette-color-4: #999999;
+        --palette-color-5: #cccccc;
+        --palette-color-6: #ffffff;
+    }
+}
+
+html {
+    color: var(--palette-color-6);
+    background-color: var(--palette-color-1);
+}
+
+/* Remove the default arrow */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+}
